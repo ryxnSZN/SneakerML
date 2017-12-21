@@ -1,6 +1,6 @@
 # Classifying Images with Vision and Core ML
 
-Use Vision with Core ML to perform image classification.
+Preprocess photos using the Vision framework and classify them with a Core ML model.
 
 ## Overview
 
@@ -20,11 +20,11 @@ To see this sample app in action, build and run the project, then use the button
 
 ## Set Up Vision with a Core ML Model
 
-Core ML automatically generates a Swift class–in this sample, the `MobileNet` class–that provides easy access to your ML model. To set up a Vision request using the model, create an instance of that class and use its `model` property  to create a [`VNCoreMLRequest`](https://developer.apple.com/documentation/vision/vncoremlrequest) object. Use the request object's completion handler to specify a method to receive results from the model after you run the request.
+Core ML automatically generates a Swift class that provides easy access to your ML model; in this sample, Core ML automatically generates the `MobileNet` class from the `MobileNet` model.  To set up a Vision request using the model, create an instance of that class and use its `model` property  to create a [`VNCoreMLRequest`](https://developer.apple.com/documentation/vision/vncoremlrequest) object. Use the request object's completion handler to specify a method to receive results from the model after you run the request.
 
 ``` swift
 let model = try VNCoreMLModel(for: MobileNet().model)
-            
+
 let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
     self?.processClassifications(for: request, error: error)
 })
