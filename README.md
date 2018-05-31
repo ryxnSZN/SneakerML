@@ -33,7 +33,7 @@ return request
 ```
 [View in Source](x-source-tag://MLModelSetup)
 
-An ML model processes input images in a fixed aspect ratio, but input images may have arbitrary aspect ratios, so Vision must scale or crop the image to fit. For best results, set the request's [`imageCropAndScaleOption`](https://developer.apple.com/documentation/vision/vncoremlrequest/2890144-imagecropandscaleoption) property to match the image layout the model was trained with. For the [available classification models](https://developer.apple.com/machine-learning), the [`centerCrop`](https://developer.apple.com/documentation/vision/vnimagecropandscaleoption/2890124-centercrop) option is appropriate unless noted otherwise.
+An ML model processes input images in a fixed aspect ratio, but input images may have arbitrary aspect ratios, so Vision must scale or crop the image to fit. For best results, set the request's [`imageCropAndScaleOption`](https://developer.apple.com/documentation/vision/vncoremlrequest/2890144-imagecropandscaleoption) property to match the image layout the model was trained with. For the [available classification models](https://developer.apple.com/machine-learning), the [`centerCrop`](https://developer.apple.com/documentation/vision/vnimagecropandscaleoption/centercrop) option is appropriate unless noted otherwise.
 
 
 ## Run the Vision Request
@@ -57,7 +57,7 @@ DispatchQueue.global(qos: .userInitiated).async {
 ```
 [View in Source](x-source-tag://PerformRequests)
 
-Most models are trained on images that are already oriented correctly for display. To ensure proper handling of input images with arbitrary orientations, pass the image's orientation to the image request handler. (This sample app adds an initializer, [`init(_:)`](x-source-tag://ConvertOrientation), to the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) type for converting from [`UIImageOrientation`](https://developer.apple.com/documentation/uikit/uiimageorientation) orientation values.)
+Most models are trained on images that are already oriented correctly for display. To ensure proper handling of input images with arbitrary orientations, pass the image's orientation to the image request handler. (This sample app adds an initializer, [`init(_:)`](x-source-tag://ConvertOrientation), to the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) type for converting from [`UIImageOrientation`](https://developer.apple.com/documentation/uikit/uiimage/orientation) orientation values.)
 
 ## Handle Image Classification Results
 

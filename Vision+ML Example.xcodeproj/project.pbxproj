@@ -25,8 +25,8 @@
 		11063F6D1EC0EECC0033EE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		113695D71EC1151400CA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1C20A515D4B2C0948FB5983F /* SampleCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		C5F05BC3F43CDD1243BD2BF8 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		A9558E70A9563BA000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		A9666960A9666AD000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		C858E5CC1ECA99CC006C5CAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C89947D91F4639A8005C0A19 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = Model/MobileNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,8 +48,8 @@
 				C858E5CC1ECA99CC006C5CAA /* README.md */,
 				11063F601EC0EECC0033EE6D /* Vision+ML Example */,
 				11063F5F1EC0EECC0033EE6D /* Products */,
-				510ED052EDA7BD18C9C19E4C /* Configuration */,
-				50F4E5DFDAFEC67D7E127057 /* LICENSE */,
+				A9563AD0A9557D1000000001 /* Configuration */,
+				A96664E0A96664B000000001 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,21 +74,21 @@
 			path = "Vision+ML Example";
 			sourceTree = "<group>";
 		};
-		50F4E5DFDAFEC67D7E127057 /* LICENSE */ = {
+		A9563AD0A9557D1000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				C5F05BC3F43CDD1243BD2BF8 /* LICENSE.txt */,
+				A9558E70A9563BA000000001 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		A96664E0A96664B000000001 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				A9666960A9666AD000000001 /* LICENSE.txt */,
 			);
 			name = LICENSE;
 			path = LICENSE;
-			sourceTree = "<group>";
-		};
-		510ED052EDA7BD18C9C19E4C /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				1C20A515D4B2C0948FB5983F /* SampleCode.xcconfig */,
-			);
-			name = Configuration;
 			sourceTree = "<group>";
 		};
 		C82A1C951F1809F5005996F6 /* Supporting Files */ = {
@@ -111,6 +111,7 @@
 				11063F5A1EC0EECC0033EE6D /* Sources */,
 				11063F5B1EC0EECC0033EE6D /* Frameworks */,
 				11063F5C1EC0EECC0033EE6D /* Resources */,
+				C858E5CB1ECA98CA006C5CAA,
 			);
 			buildRules = (
 			);
@@ -204,7 +205,7 @@
 /* Begin XCBuildConfiguration section */
 		11063F6E1EC0EECC0033EE6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C20A515D4B2C0948FB5983F /* SampleCode.xcconfig */;
+			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -263,7 +264,7 @@
 		};
 		11063F6F1EC0EECC0033EE6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C20A515D4B2C0948FB5983F /* SampleCode.xcconfig */;
+			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -315,7 +316,7 @@
 		};
 		11063F711EC0EECC0033EE6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C20A515D4B2C0948FB5983F /* SampleCode.xcconfig */;
+			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
@@ -332,7 +333,7 @@
 		};
 		11063F721EC0EECC0033EE6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C20A515D4B2C0948FB5983F /* SampleCode.xcconfig */;
+			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
